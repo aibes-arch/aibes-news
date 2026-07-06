@@ -1,0 +1,25 @@
+# 数据采集与解析
+feedparser>=6.0.11
+requests>=2.31.0
+beautifulsoup4>=4.12.2
+lxml>=4.9.3
+python-dateutil>=2.8.2
+schedule>=1.2.0
+
+# 正文抽取
+trafilatura>=1.6.0
+
+# 大模型摘要
+openai>=1.6.0
+
+# 向量库与 Embedding
+chromadb>=0.4.18
+sentence-transformers>=2.2.2
+
+# Web 看板
+streamlit>=1.29.0
+
+# 配置与工具
+pyyaml>=6.0.1
+python-dotenv>=1.0.0
+tqdm>=4.66.1

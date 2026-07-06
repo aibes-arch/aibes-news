@@ -1,0 +1,183 @@
+# 技术情报 Agent 源配置
+# 每个源包含：name, url, type, category, enabled, max_items
+# type: rss | api | html（目前主要实现 rss）
+# category 为默认分类，最终分类由 classifier 重新判定
+
+official:
+  name: 官方源
+  sources:
+    - name: OpenAI News
+      url: https://openai.com/news/rss.xml
+      type: rss
+      enabled: true
+      max_items: 15
+    - name: Anthropic News
+      url: https://www.anthropic.com/news/rss.xml
+      type: rss
+      enabled: true
+      max_items: 15
+    - name: Google AI Blog
+      url: https://ai.googleblog.com/feeds/posts/default
+      type: rss
+      enabled: true
+      max_items: 15
+    - name: Microsoft Research
+      url: https://www.microsoft.com/en-us/research/feed/
+      type: rss
+      enabled: true
+      max_items: 15
+    - name: Meta AI Blog
+      url: https://ai.meta.com/blog/rss/
+      type: rss
+      enabled: true
+      max_items: 15
+    - name: NVIDIA Blog
+      url: https://blogs.nvidia.com/blog/feed/
+      type: rss
+      enabled: true
+      max_items: 15
+    - name: GitHub Blog
+      url: https://github.blog/feed/
+      type: rss
+      enabled: true
+      max_items: 15
+
+research:
+  name: 研究源
+  sources:
+    - name: arXiv cs.AI
+      url: https://rss.arxiv.org/rss/cs.AI
+      type: rss
+      enabled: true
+      max_items: 20
+    - name: arXiv cs.LG
+      url: https://rss.arxiv.org/rss/cs.LG
+      type: rss
+      enabled: true
+      max_items: 20
+    - name: arXiv cs.CL
+      url: https://rss.arxiv.org/rss/cs.CL
+      type: rss
+      enabled: true
+      max_items: 20
+    - name: arXiv cs.CV
+      url: https://rss.arxiv.org/rss/cs.CV
+      type: rss
+      enabled: true
+      max_items: 20
+
+engineering:
+  name: 工程源
+  sources:
+    - name: Hacker News Frontpage
+      url: https://hnrss.org/frontpage
+      type: rss
+      enabled: true
+      max_items: 30
+    - name: Lobsters
+      url: https://lobste.rs/rss
+      type: rss
+      enabled: true
+      max_items: 20
+    - name: InfoQ
+      url: https://feed.infoq.com/
+      type: rss
+      enabled: true
+      max_items: 15
+    - name: The New Stack
+      url: https://thenewstack.io/feed/
+      type: rss
+      enabled: true
+      max_items: 15
+    - name: Stack Overflow Blog
+      url: https://stackoverflow.blog/feed/
+      type: rss
+      enabled: true
+      max_items: 15
+
+cloud:
+  name: 云厂商源
+  sources:
+    - name: AWS Machine Learning Blog
+      url: https://aws.amazon.com/blogs/machine-learning/feed/
+      type: rss
+      enabled: true
+      max_items: 15
+    - name: Google Cloud Blog
+      url: https://cloudblog.withgoogle.com/feeds/posts/default?alt=rss
+      type: rss
+      enabled: true
+      max_items: 15
+    - name: Azure AI Blog
+      url: https://azure.microsoft.com/en-us/blog/topics/ai/feed/
+      type: rss
+      enabled: true
+      max_items: 15
+    - name: Cloudflare Blog
+      url: https://blog.cloudflare.com/rss/
+      type: rss
+      enabled: true
+      max_items: 15
+
+security:
+  name: 安全与开源
+  sources:
+    - name: CISA Alerts
+      url: https://www.cisa.gov/news.xml
+      type: rss
+      enabled: true
+      max_items: 15
+    - name: GitHub Security
+      url: https://github.blog/category/security/feed/
+      type: rss
+      enabled: true
+      max_items: 15
+    - name: Krebs on Security
+      url: https://krebsonsecurity.com/feed/
+      type: rss
+      enabled: true
+      max_items: 10
+    - name: The Hacker News
+      url: https://feeds.feedburner.com/TheHackersNews
+      type: rss
+      enabled: true
+      max_items: 15
+    - name: Linux Foundation
+      url: https://www.linuxfoundation.org/blog/feed/
+      type: rss
+      enabled: true
+      max_items: 10
+
+chinese:
+  name: 中文源
+  sources:
+    - name: 机器之心
+      url: https://www.jiqizhixin.com/rss
+      type: rss
+      enabled: true
+      max_items: 15
+    - name: 量子位
+      url: https://www.qbitai.com/feed
+      type: rss
+      enabled: true
+      max_items: 15
+    - name: InfoQ中文
+      url: https://www.infoq.cn/feed
+      type: rss
+      enabled: true
+      max_items: 15
+    - name: AI科技评论
+      url: https://www.leiphone.com/feed
+      type: rss
+      enabled: true
+      max_items: 15
+    - name: 开源中国
+      url: https://www.oschina.net/news/rss
+      type: rss
+      enabled: true
+      max_items: 15
+    - name: 掘金
+      url: https://juejin.cn/rss
+      type: rss
+      enabled: true
+      max_items: 15
